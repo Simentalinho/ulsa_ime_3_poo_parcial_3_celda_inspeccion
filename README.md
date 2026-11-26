@@ -88,6 +88,7 @@ Diagrama de clases de la solución completa, hecho en draw.io. Guarden la imagen
 
 | Integrante | Documentación de su clase | Rama del reto opcional |
 | --- | --- | --- |
+| Yair Flores | [CamaraVision](docs/25317/CamaraVision.md) | No |
 | | `docs/<matrícula>/<Clase>.md` | `<matrícula>` o "No" |
 | | | |
 | | | |
