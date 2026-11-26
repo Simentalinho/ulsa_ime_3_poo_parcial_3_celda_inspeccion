@@ -9,8 +9,8 @@ La guía completa del proyecto está en [PROYECTO.md](PROYECTO.md). Léanla ante
 | Integrante | Matrícula | Nombre | Usuario de GitHub | Clase |
 | --- | --- | --- | --- | --- |
 | 1 |25173 |Cesar Leonardo Garrido |clgarridog | |
-| 2 | | | | |
-| 3 | | | | |
+| 2 | 25127 |Jesus Humberto Gonzalez Bonilla | Hormigrifa| ReporteTurno |
+| 3 | 25104  | Diego Emilio Simental Perez| simentalinho |SensorTemperatura |
 | 4 | | | | |
 | 5 | | | | |
 | 6 (solo equipo de seis) | | | | |

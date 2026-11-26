@@ -10,7 +10,6 @@ class ReporteTurno {
 private:
     int inspeccionadas_;
     int aceptadas_;
-
     std::map<std::string, int> rechazos_;
 
 public:
@@ -38,5 +37,10 @@ public:
         const ReporteTurno& otro
     ) const;
 
-    friend std::ostream
+    friend std::ostream& operator<<(
+        std::ostream& os,
+        const ReporteTurno& reporte
+    );
+};
 
+} // namespace calidad
