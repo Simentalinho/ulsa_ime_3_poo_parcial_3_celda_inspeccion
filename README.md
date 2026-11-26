@@ -11,7 +11,7 @@ La guía completa del proyecto está en [PROYECTO.md](PROYECTO.md). Léanla ante
 | 1 |25173 |Cesar Leonardo Garrido |clgarridog | |
 | 2 | 25127 |Jesus Humberto Gonzalez Bonilla | Hormigrifa| ReporteTurno |
 | 3 | 25104  | Diego Emilio Simental Perez| simentalinho |SensorTemperatura |
-| 4 | | | | |
+| 4 | 25317 | Yair Alberto Flores Peña | yairflores09| Camara Vision|
 | 5 | | | | |
 | 6 (solo equipo de seis) | | | | |
 
@@ -99,18 +99,18 @@ Los resultados de los experimentos están en [docs/experimentos.md](docs/experim
 
 ## 7. Prueba de extensibilidad
 
-Practiquen agregar un dispositivo nuevo antes de entregar.
-
 **¿Qué archivos tuvieron que crear o modificar? ¿Tuvieron que tocar `CeldaInspeccion`?**
 
-[Inserta aquí tu respuesta]
+Para la prueba usamos un archivo `.cpp` temporal con un `main` de prueba. Ahí creamos `SensorDePrueba`, con ID `PR-01`, que hereda de `Dispositivo` y sobrescribe `descripcion()` e `inspeccionar()`. Lo registramos con `agregarDispositivo()`.
+
+La celda aceptó una pieza con cero defectos y rechazó otra con un defecto. El reporte registró dos piezas inspeccionadas, una aceptada y un rechazo para `PR-01`. Pudimos hacer la prueba sin modificar `CeldaInspeccion` ni el `main.cpp` del proyecto.
 
 ## 8. Reflexión del equipo
 
 **¿Qué aprendieron en este proyecto?**
 
-[Inserta aquí tu respuesta]
+Aprendimos a usar clases abstractas y polimorfismo para que la celda pueda trabajar con distintos dispositivos. Cada dispositivo aplica su propia regla de inspección. Por ejemplo, la cámara acepta una pieza si tiene cero defectos visibles. También vimos cómo separar la calibración de la inspección y cómo registrar qué dispositivo rechazó cada pieza.
 
 **¿Qué cambiarían de su proceso de trabajo como equipo?**
 
-[Inserta aquí tu respuesta]
+Desde el inicio acordaríamos en qué repositorio y rama vamos a integrar el código. Avisaríamos al equipo al subir cambios y compilaríamos el proyecto completo después de cada integración. Así podríamos detectar a tiempo si falta subir un archivo o si el reporte del turno sale distinto al esperado.
