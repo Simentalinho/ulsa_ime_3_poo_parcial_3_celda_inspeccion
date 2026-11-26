@@ -15,32 +15,20 @@ private:
 public:
     ReporteTurno();
 
-    ReporteTurno(
-        int inspeccionadas,
-        int aceptadas,
-        const std::map<std::string, int>& rechazos
-    );
+    ReporteTurno(int inspeccionadas, int aceptadas,
+                 const std::map<std::string, int>& rechazos);
 
     void registrarPieza(bool aceptada);
-
-    void registrarRechazo(
-        const std::string& idDispositivo
-    );
+    void registrarRechazo(const std::string& idDispositivo);
 
     int inspeccionadas() const;
-
     int aceptadas() const;
-
     int rechazadas() const;
 
-    bool operator==(
-        const ReporteTurno& otro
-    ) const;
+    bool operator==(const ReporteTurno& otro) const;
 
-    friend std::ostream& operator<<(
-        std::ostream& os,
-        const ReporteTurno& reporte
-    );
+    friend std::ostream& operator<<(std::ostream& os,
+                                    const ReporteTurno& r);
 };
 
-} // namespace calidad
+}
