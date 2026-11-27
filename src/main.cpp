@@ -3,11 +3,11 @@
 #include "Bascula.h"
 #include "CalibradorLaser.h"
 #include "CamaraVision.h"
-#include "SensorTemperatura.h"
-#include "limitadordepeso.h"
 #include "CeldaInspeccion.h"
 #include "DatosTurno.h"
 #include "ReporteTurno.h"
+#include "SensorTemperatura.h"
+#include "limitadordepeso.h"
 
 using namespace calidad;
 
@@ -19,7 +19,6 @@ int main() {
     limitadordepeso limitador("M-01");
 
     CeldaInspeccion celda;
-
     celda.agregarDispositivo(&bascula);
     celda.agregarDispositivo(&laser);
     celda.agregarDispositivo(&camara);
@@ -33,6 +32,5 @@ int main() {
     }
 
     std::cout << '\n' << celda.reporte();
-
     return 0;
 }
