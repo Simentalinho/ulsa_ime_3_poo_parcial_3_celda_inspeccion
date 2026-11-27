@@ -4,6 +4,7 @@
 #include "CalibradorLaser.h"
 #include "CamaraVision.h"
 #include "SensorTemperatura.h"
+#include "limitadordepeso.h"
 
 #include "CeldaInspeccion.h"
 #include "DatosTurno.h"
@@ -18,6 +19,7 @@ int main() {
     CalibradorLaser laser("L-01");
     CamaraVision camara("V-01");
     SensorTemperatura sensor("T-01");
+    limitadordepeso limitador("M-01");
 
     // Crear celda de inspección
     CeldaInspeccion celda;
@@ -27,7 +29,7 @@ int main() {
     celda.agregarDispositivo(&laser);
     celda.agregarDispositivo(&camara);
     celda.agregarDispositivo(&sensor);
-
+    celda.agregarDispositivo(&limitador);
     // Iniciar turno y calibrar dispositivos
     celda.iniciarTurno();
 
@@ -49,6 +51,7 @@ int main() {
             {"L-01", 2},
             {"T-01", 2},
             {"V-01", 2}
+            {"M-01", N}
         }
     );
 
